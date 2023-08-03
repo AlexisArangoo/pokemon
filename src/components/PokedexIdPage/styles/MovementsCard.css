@@ -1,0 +1,28 @@
+.movements{
+    width: 100%;
+    padding: 1em;
+    margin: 6em 0;
+    border-radius: 0.3em;
+    box-shadow:0 0 0.5em #ccc;
+    background-color: beige;
+}
+
+.movements-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 0.5em;
+}
+
+.movements-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+}
+
+.movements-items-value{
+    padding:0.4em 1em;
+    border-radius: 1em;
+    background-color: #ccc4;
+}

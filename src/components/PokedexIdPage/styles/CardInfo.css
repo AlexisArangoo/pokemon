@@ -1,0 +1,169 @@
+.cardinfo{
+    width: 100%;
+    padding: 0.2em;
+    margin: 6em 0;
+    border-radius: 0.3em;
+    box-shadow:0 0 0.5em #ccc;
+    background-color: beige;
+}
+
+.cardinfo-header{
+    position: relative;
+    height: 200px;
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+.cardinfo-header-img{
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    left: 50%;
+    bottom: -0.5em;
+    transform: translateX(-50%);
+}
+
+.cardinfo-body{
+    padding: 1em 5em;
+}
+
+.cardinfo-body-id{
+    width: max-content;
+    margin: 0 auto;
+    padding: 0.1em 0.5em;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    font-weight: 600; 
+    color: white;
+}
+
+.container-name{
+    display: flex;
+    align-items: center;
+}
+
+.container-name img{
+    width: 5em;
+}
+.hr{
+    width: 100%;
+    margin: 0.5em 0;
+    border: 1px solid #D3D3D3;
+}
+.cardinfo-body-name{
+    text-align: center;
+    padding: 0 1em;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.cardinfo-body-sizes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.body-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-size-h4{
+    color: #aaa;
+}
+
+.body-size-span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cardinfo-body-types{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 0.5em; 
+ }
+
+ .body-type{
+     width: 100%;
+     margin-top: 3em;
+    text-align: center;
+ }
+
+ .body-type-title{
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+    font-weight: 700;
+ }
+
+ .body-type-container-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5em;
+ }
+
+ .item1{
+    color: white;
+ }
+
+ .body-type-span{
+    width: 100%;
+    max-width: 120px;
+    border-radius: 0.2em;
+    box-shadow: 0 2px 10px #aaa;
+    padding: 0.1em 0.5em;
+ }
+
+ .cardinfo-body-label{
+    padding-right: 0.5em;
+    font-size: 1.7rem;
+    font-weight: 600;
+ }
+
+ .container-name.label{
+    margin-top: 5em;
+ }
+
+ .cardinfo-body-stats{
+    width: 100%;
+ }
+
+ .body-stat{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+ }
+
+ .body-stat-maxvalue::before{
+    content: '/';
+    padding: 0 0.2em;
+ }
+
+ .progressbar{
+    width: 100%;
+    height: 1.5em;
+    margin-bottom: 2em;
+    border-radius: 0.2em;
+    background-color: #F6F6F6;
+ }
+
+ .progress{
+    height: 100%;
+    border-radius: 0.2em;
+    background: linear-gradient(to right, #FCD676, #E6901E);
+    transition: 1.5s ease;
+ }
+
+
+
+
+
+
+
+

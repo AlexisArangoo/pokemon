@@ -1,0 +1,30 @@
+.pagination{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pagination-previous,
+.pagination-next{
+    max-width: 50px;
+    border: none;
+    background-color: transparent;
+    color: #DD1A1A;
+}
+
+.bx-arrow-from-right,
+.bx-arrow-from-left{
+    font-size: 3.5rem;
+}
+
+.pagination-link{
+    border-color: #DD1A1A;
+    background-color: #DD1A1A;
+    color: white;
+}
+
+.pagination-link.is-current{
+    background: linear-gradient( #DD1A1A 30%, black , white 70%);
+    color: white;
+    border-color: black;
+}

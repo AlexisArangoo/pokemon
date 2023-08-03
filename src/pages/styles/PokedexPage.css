@@ -1,0 +1,112 @@
+.pokedexpage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    overflow: auto;
+}
+
+.header{
+    width: 100%;
+}
+
+.header-red{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #DD1A1A;
+}
+
+.header-red img{
+    position: absolute;
+    left: 2em;
+    bottom: -0.2em;
+    max-width: 300px;
+}
+
+.header-black{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #0C0C0C;;
+}
+
+.header-black img{
+    position: absolute;
+    width: 100px;
+    bottom: -3em;
+    right: 10%; 
+}
+
+.pokedexpage-body{
+    padding: 2.5em 6em;
+}
+
+.pokedexpage-welcome{
+    font-size: 1.3em;
+    font-size: 500;
+}
+
+.pokedexpage-welcome span{
+    color: red;
+    font-weight: 600;
+}
+
+.container-pokedexpage-form{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+
+.pokedexpage-form{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokedexpage-form-input{
+    padding: 1em;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 3px 5px #aaa;
+}
+
+.pokedexpage-form-btn{
+    padding: 1em;
+    font-weight: 600;
+    background-color: #D93F3F;
+    color: white;
+}
+
+.container-pokecard{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding-bottom: 2em;
+}
+
+.mensaje-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    font-size: 2rem;
+}
+.mensaje-error span{
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 606px) {
+    .pokedexpage-body{
+        padding: 2.5em 1em;
+    }
+    
+}

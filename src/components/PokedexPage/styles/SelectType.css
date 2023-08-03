@@ -1,0 +1,18 @@
+.selecttype{
+    width: 100%;
+    max-width: max-content;
+    padding: 1em;
+}
+
+.container-select{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+select option{
+    color: red;
+}
+
+

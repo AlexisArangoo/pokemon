@@ -1,0 +1,137 @@
+.pokecard{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.7em;
+    border: 0.7em solid #ccc;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.pokecard:hover{
+    transform: scale(1.03);
+}
+
+.pokecard-header{
+    background-color: #999;
+    aspect-ratio: 2;
+    position: relative;
+}
+
+.pokecard-image{
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5em;
+}
+
+.pokecard-body{
+    padding: 3.5em 1em 2em;
+}
+
+.pokecard-name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.pokecard-types{
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
+}
+
+.pokecard-type-name{
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.pokecard-type-name:nth-child(2)::before{
+    content: '/';
+    padding-right: 0.7em;
+}
+
+.pokecard-hr{
+    margin-bottom: 1em;
+    border: 1px solid #ccc4;
+}
+
+.pokecard-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em 0.2em;
+}
+
+.pokecard-stat{
+    display: grid;
+    gap: 0.5em;
+    justify-items: center;
+}
+
+.pokecard-stat-name{
+    font-size: 0.7em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.pokecard-stat-value{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.fire-border{
+    border-color:  #e96e27;
+}
+.grass-border{
+    border-color:  #7EC6C5;
+}
+.water-border{
+    border-color:  #133258;
+}
+.bug-border{
+    border-color:  #62DB60;
+}
+.normal-border{
+    border-color:  #735259;
+}
+.fighting-border{
+    border-color:  #96402A;
+}
+.poison-border{
+    border-color:  #5B3184;
+}
+.ghost-border{
+    border-color:  #323569;
+}
+.rock-border{
+    border-color:  #7E7E7E;
+}
+.dark-border{
+    border-color:  #030706;
+}
+.ice-border{
+    border-color:  #6FBEDF;
+}
+.steel-border{
+    border-color:  #5E736C;
+}
+.dragon-border{
+    border-color:  #478A93;
+}
+.fairy-border{
+    border-color:  #971B45;
+}
+.electric-border{
+    border-color:  #101306;
+}
+.ground-border{
+    border-color:  #654008;
+}
+.flying-border{
+    border-color:  #0C1395;
+}
+.psychic-border{
+    border-color:  #d5e4aa;
+}

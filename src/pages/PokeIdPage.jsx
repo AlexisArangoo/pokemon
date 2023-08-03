@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
 import { useEffect } from "react"
-import CardInfo from "../components/PokedexIdPage/cardInfo"
+import CardInfo from "../components/PokedexIdPage/CardInfo"
 import './styles/PokeIdPage.css'
 import MovementsCard from "../components/PokedexIdPage/MovementsCard"
 

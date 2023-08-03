@@ -9,7 +9,7 @@ const useFetch = (url, callback) => {
     axios.get(url)
         .then(resp => {
           setInfoApi(resp.data)
-          // callback(false)
+          callback(false)
         })
         .catch(err => console.log(err))
   }
@@ -21,7 +21,7 @@ const useFetch = (url, callback) => {
           results: resp.data.pokemon.map(e => e.pokemon)
         }
         setInfoApi(obj)
-        // callback(false)
+        callback(false)
       })
       .catch(err => console.log(err))
   }

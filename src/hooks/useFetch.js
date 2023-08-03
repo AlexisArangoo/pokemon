@@ -3,13 +3,13 @@ import { useState } from "react"
 
 const useFetch = (url, callback) => {
   const [infoApi, setInfoApi] = useState()
-  
+
   const getApi = () =>{
 
     axios.get(url)
         .then(resp => {
           setInfoApi(resp.data)
-          callback(false)
+          // callback(false)
         })
         .catch(err => console.log(err))
   }
@@ -21,7 +21,7 @@ const useFetch = (url, callback) => {
           results: resp.data.pokemon.map(e => e.pokemon)
         }
         setInfoApi(obj)
-        callback(false) 
+        // callback(false)
       })
       .catch(err => console.log(err))
   }

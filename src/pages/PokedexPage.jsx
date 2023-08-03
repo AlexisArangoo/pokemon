@@ -88,7 +88,7 @@ const PokedexPage = () => {
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           totalCard={totalCard}
-          />
+          /> 
 
           <div className="container-pokecard">
 

@@ -20,9 +20,28 @@
 .pokecard-image{
     position: absolute;
     width: 60%;
+    height: 100%;
+    object-fit: contain;
     left: 50%;
+    top: 3em;
     transform: translateX(-50%);
-    top: 1.5em;
+    transition: opacity 500ms ease;
+}
+
+.pokecard:hover .img1{
+    opacity: 0;
+}
+
+.pokecard:hover .img2{
+    opacity: 1;
+}
+
+.img1{
+    opacity: 1;
+}
+
+.img2{
+    opacity: 0;
 }
 
 .pokecard-body{

@@ -66,6 +66,7 @@
 .pokedexpage-form{
     width: 100%;
     max-width: 350px;
+    height: max-content;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;

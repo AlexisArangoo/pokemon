@@ -58,7 +58,7 @@ const PokedexPage = () => {
           <div className="header-black">
             <img src="/images/pokebola.png" alt="" />
           </div>
-      </header> 
+      </header>  
       <section className="pokedexpage-body">
           <p className="pokedexpage-welcome"><span>Welcome {trainer},</span> here you could find yout favorite pokemon</p>
 

@@ -55,8 +55,10 @@
 }
 
 .container-pokedexpage-form{
-    display: flex;
-    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 2em;
     padding: 1em 0;
 }
@@ -64,8 +66,8 @@
 .pokedexpage-form{
     width: 100%;
     max-width: 350px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
 }
 
@@ -99,7 +101,7 @@
     align-items: center;
     padding-top: 3em;
     font-size: 2rem;
-}
+} 
 .mensaje-error span{
     font-size: 4rem;
 }
@@ -107,6 +109,10 @@
 @media screen and (max-width: 606px) {
     .pokedexpage-body{
         padding: 2.5em 1em;
+    }
+    .container-pokedexpage-form{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
     }
     
 }

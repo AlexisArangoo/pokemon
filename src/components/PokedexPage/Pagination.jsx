@@ -49,6 +49,8 @@ const Pagination = ({ cardPerPage, currentPage, setCurrentPage, totalCard }) => 
  useEffect(() => {
   if (currentPage === pageNumbers.length) {
     setVisiblePageNumbers(pageNumbers.slice(pageNumbers.length - 4, pageNumbers.length))
+  }else if (currentPage === 1) {
+    setVisiblePageNumbers(pageNumbers.slice(currentPage -1, currentPage + 3))
   }
  }, [currentPage])
  

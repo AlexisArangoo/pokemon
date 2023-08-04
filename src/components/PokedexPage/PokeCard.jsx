@@ -19,12 +19,15 @@ const PokeCard = ({url}) => {
     }
 
     const firstType = pokemon?.types[0].type.name
-   
+
+    const srcImg1 = pokemon?.sprites.other['official-artwork'].front_default === null ? '/images/pokebola.png' : pokemon?.sprites.other['official-artwork'].front_default
+    
+    const srcImg2 = pokemon?.sprites.other['dream_world'].front_default === null ? srcImg1 : pokemon?.sprites.other['dream_world'].front_default
   return (
     <article className={`pokecard ${firstType}-border`} onClick={handleClick}>
         <header className={`pokecard-header ${firstType}-gradient`}>
-            <img className="pokecard-image img1" src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
-            <img className="pokecard-image img2" src={pokemon?.sprites.other['dream_world'].front_default === null ? pokemon?.sprites.other['official-artwork'].front_default : pokemon?.sprites.other['dream_world'].front_default} alt="" />
+            <img className="pokecard-image img1" src={srcImg1} alt="" />
+            <img className="pokecard-image img2" src={srcImg2} alt="" />
         </header>
         <section className="pokecard-body">
             <h3 className={`pokecard-name ${firstType}-color`}>{pokemon?.name}</h3>
